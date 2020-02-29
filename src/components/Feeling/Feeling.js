@@ -3,29 +3,26 @@ import '../App/App.css';
 import { connect } from 'react-redux';
 
 class Feeling extends Component {
-    state = {
-        feeling:''
-    }
+    state = null;
     
     handleChangeFor = (propertyName, event) => {
         console.log('logging from handleChangeFor', event.target.value);
-        this.setState({
-           
-                ...this.state,
-            [propertyName]: event.target.value
-            
+        this.setState({ feeling: event.target.value  
         })
     }
     
     handleClick = (event)=>{
         event.preventDefault();
-        console.log('logging feeling selector from Submit',this.state); 
+        this.props.dispatch({
+            type: 'SET_RESPONSE',
+            payload: this.state
+        })
+        console.log('logging payload from SET_RESPONSE',this.state);
+
         this.props.history.push ('/Understanding');
     }
 
-    // handleChange = (propertyName, event)=>{
-    //     console.log('logging event.target.value for selector change', event.target.value);    
-    // }
+  
 
     render() {
         return(
