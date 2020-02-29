@@ -12,7 +12,7 @@ app.use(express.static('build'));
 
 
 const submittedRouter = require('./routes/submitted.router');
-app.use('/comments', submittedRouter);
+app.use('/submitted', submittedRouter);
 
 
 /** ---------- START SERVER ---------- **/
