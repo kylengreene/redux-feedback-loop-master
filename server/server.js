@@ -15,7 +15,7 @@ app.use('/comments', commentsRouter);
 const feelingRouter = require('./routes/feeling.router');
 app.use('/comments', feelingRouter);
 
-const submittedRouter = require('./routes/submitted.routerr');
+const submittedRouter = require('./routes/submitted.router');
 app.use('/comments', submittedRouter);
 
 const supportRouter = require('./routes/support.router');
