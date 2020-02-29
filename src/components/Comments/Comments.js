@@ -8,7 +8,7 @@ class Comments extends Component {
     handleChangeFor = (propertyName, event) => {
         console.log('logging from handleChangeFor', event.target.value);
         this.setState({
-            support: event.target.value
+            comments: event.target.value
         })
     }
 
@@ -20,7 +20,7 @@ class Comments extends Component {
         })
         console.log('logging payload from SET_RESPONSE', this.state);
 
-        // this.props.history.push('/Review');
+        this.props.history.push('/Review');
     }
 
 
@@ -31,7 +31,7 @@ class Comments extends Component {
                 <div>
                     <h1>Any comments you want to leave?</h1>
                     <form onSubmit={this.handleClick}>
-                        <input required type="text" id="1" name="comments"
+                        <input required type="text" id="1" name="comments" size='60'
                             onChange={(event) => this.handleChangeFor('comments', event)} placeholder='Comments'/>
                         
                         <button type="submit">

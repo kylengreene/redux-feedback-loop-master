@@ -9,8 +9,6 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 const responseReducer = (state = [], action) => {
-    console.log('logging payload from feeling Reducer', action.payload);
-    
     switch (action.type) {
         case 'SET_RESPONSE':
             return [...state, action.payload];
