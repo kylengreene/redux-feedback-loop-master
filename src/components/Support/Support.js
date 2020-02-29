@@ -3,6 +3,10 @@ import '../App/App.css';
 import { connect } from 'react-redux';
 
 class Support extends Component {
+    render() {
+
+        return;
+    }
 }
 const putReduxStateOnProps = (reduxState) => ({
     reduxState

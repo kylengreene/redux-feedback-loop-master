@@ -11,6 +11,7 @@ import Support from '../Support/Support';
 import Understanding from '../Understanding/Understanding';
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
@@ -20,6 +21,8 @@ class App extends Component {
           <h4><i>Don't forget it!</i></h4>
         </header>
         <br/>
+          <Link className="nextButton" to="/Feeling">Begin</Link>
+
           <Route path="/Comments" component={Comments} />
           <Route path="/Feeling" component={Feeling} />
           <Route path="/Review" component={Review} />
