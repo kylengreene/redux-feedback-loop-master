@@ -22,12 +22,12 @@ class App extends Component {
         <br/>
           <Link className="nextButton" to="/Feeling">Begin</Link>
 
-          <Route path="/Comments" component={Comments} />
-          <Route path="/Feeling" component={Feeling} />
-          <Route path="/Review" component={Review} />
-          <Route path="/Submitted" component={Submitted} />
-          <Route path="/Support" component={Support} />
-          <Route path="/Understanding" component={Understanding} />
+          <Route exact path="/Comments" component={Comments} />
+          <Route exact path="/Feeling" component={Feeling} />
+          <Route exact path="/Review" component={Review} />
+          <Route exact path="/Submitted" component={Submitted} />
+          <Route exact path="/Support" component={Support} />
+          <Route exact path="/Understanding" component={Understanding} />
         </Router>
       </div>
     );

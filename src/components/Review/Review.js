@@ -19,7 +19,7 @@ class Review extends Component {
         });
         this.props.history.push('/');
         this.props.dispatch({
-            type: 'RESET_TOTAL'
+            type: 'RESET_RESPONSE'
         });
     }
 
@@ -41,10 +41,10 @@ class Review extends Component {
             <table>
                 <thead>
                     <tr>
-                        <th>Feeling Rating</th>
-                        <th>Understanding Rating</th>
-                        <th>Support Rating</th>
-                        <th>Added Comments</th>
+                        <th>  Feeling Rating  </th>
+                        <th>  Understanding Rating  </th>
+                        <th>  Support Rating  </th>
+                        <th>  Added Comments  </th>
                     </tr>
                 </thead>
                 <tbody className="ReviewItem">

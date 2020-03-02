@@ -29,7 +29,7 @@ class Understanding extends Component {
             <>
                 <div>
                     <h1>How well are you understanding the content?</h1>
-                    <form onSubmit={this.handleClick}>
+                    <form onSubmit={this.handleClick} required>
                         <input required type="radio" id="1" name="understanding" value="1"
                             onChange={(event) => this.handleChangeFor('understanding', event)} />
                         <label for="1">1</label>

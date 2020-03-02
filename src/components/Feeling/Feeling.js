@@ -30,7 +30,7 @@ class Feeling extends Component {
             <>
                 <div>
                     <h1>How are you feeling today?</h1>
-                    <form onSubmit={this.handleClick}>
+                    <form onSubmit={this.handleClick} required>
                         <input required type="radio" id="1" name="feeling" value="1"
                             onChange={(event) => this.handleChangeFor('feeling', event)} />
                         <label for="1">1</label>

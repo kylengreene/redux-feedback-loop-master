@@ -12,8 +12,8 @@ const responseReducer = (state = [], action) => {
     switch (action.type) {
         case 'SET_RESPONSE':
             return [...state, action.payload];
-        case 'GET_RESPONSE':
-            return state
+        case 'RESET_RESPONSE':
+            return state = [];
         default:
             return state;
     }

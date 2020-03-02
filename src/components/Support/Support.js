@@ -30,7 +30,7 @@ class Support extends Component {
             <>
                 <div>
                     <h1>How well are you being supported today?</h1>
-                    <form onSubmit={this.handleClick}>
+                    <form onSubmit={this.handleClick} required>
                         <input required type="radio" id="1" name="support" value="1"
                             onChange={(event) => this.handleChangeFor('support', event)} />
                         <label for="1">1</label>
