@@ -10,7 +10,11 @@ import Support from '../Support/Support';
 import Understanding from '../Understanding/Understanding';
 
 class App extends Component {
-  
+  emptyResponse = () =>{
+    this.props.dispatch({
+      type: 'RESET_RESPONSE'
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -20,7 +24,7 @@ class App extends Component {
           <h4><i>Don't forget it!</i></h4>
         </header>
         <br/>
-          <Link className="nextButton" to="/Feeling">Begin</Link>
+          <Link className="nextButton" to="/Feeling" onClick={this.emptyResponse} >Begin</Link>
 
           <Route exact path="/Comments" component={Comments} />
           <Route exact path="/Feeling" component={Feeling} />
